@@ -1,0 +1,25 @@
+package meowww;
+
+import java.util.Scanner;
+
+public class zad111 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+int s = sc.nextInt();
+int e = sc.nextInt();
+
+
+for (int i = s ; i < e; i++) {int k =i%1000;
+	if (k==111)System.out.println(i);
+	else for (int t = i; k<111;t++ ) {
+		System.out.println(t);
+	}
+}
+
+	
+
+	}
+
+}
