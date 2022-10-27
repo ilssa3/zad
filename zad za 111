@@ -11,9 +11,9 @@ int s = sc.nextInt();
 int e = sc.nextInt();
 
 
-for (int i = s ; i < e; i++) {int k =i%1000;
+for (int i = s ; i <= e; i++) {int k =i%1000;
 	if (k==111)System.out.println(i);
-	else for (int t = i; k<111;t++ ) {
+	else for (int t = i; t%1000<=111;t=t/10 ) {
 		System.out.println(t);
 	}
 }
