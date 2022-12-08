@@ -1,0 +1,33 @@
+package meowww;
+
+import java.util.Scanner;
+
+public class method22 {
+	
+	public static void s() {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();int b=0;int br=0;
+		
+		for (int i = 1; i<=n; i++) {
+			b = i;
+			
+			while(b/10==0) {
+			int b1 =b%10;
+				if (b1==2)br++;
+				else b1 = b1/10;
+			
+		}
+		}
+		
+		System.out.println("broi tabeli = "+br);
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+s();
+
+
+	}
+
+}
