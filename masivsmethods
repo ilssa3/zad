@@ -1,0 +1,60 @@
+package meowww;
+
+import java.util.Scanner;
+
+public class arrmeth1 {
+	
+	public static void sredno (int []arr) {
+Scanner sc = new Scanner (System.in);
+
+	int br = 0;int sb = 0;int brsr=0;
+		
+		for (int i = 0 ; i < arr.length; i++) {
+			br++;sb = sb +arr[i];
+		}int sr = sb /br;
+		System.out.println("sredno aritm. = "+sr);
+		
+		for (int i = 0 ; i < arr.length; i++) {
+			
+			if (arr[i]>sr)brsr++;
+		}System.out.println("broi cifri nad srednoto = "+brsr);
+	}
+
+	//-----------------------------------
+	
+	public static void output(int []arr) {
+		
+Scanner sc = new Scanner (System.in);
+		
+		for (int i = 0 ; i < arr.length; i++) {System.out.println("arr["+i+"] = "+arr[i]);		
+		}
+	}
+	
+	
+	//-----------------------------------
+	
+	public static void imput(int []arr) {
+		Scanner sc = new Scanner (System.in);
+		
+		int br = 0;
+		
+		for (int i = 0 ; i < arr.length; i++) {System.out.print("arr["+i+"] = ");
+			arr[i] = sc.nextInt();br++;
+			
+		}System.out.println("broq na chislata = "+br);
+	}
+	
+	
+	//-----------------------------------
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int a = sc.nextInt();
+		
+		int []arr = new int[a];
+		imput(arr);System.out.println(); output(arr);System.out.println();sredno(arr);
+		
+	
+	}
+
+}
