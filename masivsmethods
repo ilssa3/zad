@@ -1,23 +1,24 @@
 package meowww;
-
 import java.util.Scanner;
-
 public class arrmeth1 {
 	
 	public static void sredno (int []arr) {
 Scanner sc = new Scanner (System.in);
 
-	int br = 0;int sb = 0;int brsr=0;
+	int br = 0;int sb = 0;int brsr=0;int sr=0;
 		
 		for (int i = 0 ; i < arr.length; i++) {
 			br++;sb = sb +arr[i];
-		}int sr = sb /br;
+		} sr = sb /br;
+		
+		
 		System.out.println("sredno aritm. = "+sr);
 		
 		for (int i = 0 ; i < arr.length; i++) {
 			
 			if (arr[i]>sr)brsr++;
 		}System.out.println("broi cifri nad srednoto = "+brsr);
+		
 	}
 
 	//-----------------------------------
@@ -51,10 +52,9 @@ Scanner sc = new Scanner (System.in);
 		Scanner sc = new Scanner (System.in);
 		int a = sc.nextInt();
 		
-		int []arr = new int[a];
-		imput(arr);System.out.println(); output(arr);System.out.println();sredno(arr);
-		
-	
+		int []arr = new int[a];		
+		imput(arr);System.out.println("*****"); output(arr);System.out.println("*****");sredno(arr);
 	}
 
 }
+
